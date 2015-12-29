@@ -1,6 +1,11 @@
 # XCRecyclerView
 A RecyclerView that implements header and footer features，and you can use it like the standard RecyclerView, and,you no need another adapter.。
 一个可以添加header和footer的RecyclerView，无需使用新的adapter，使用起来和标准的RecyclerView一样。
+效果图如下：
+
+
+![image](https://github.com/jczmdeveloper/XCRecyclerView/blob/master/screenshots/01.gif)  
+
 
 
 使用方法示例如下：
