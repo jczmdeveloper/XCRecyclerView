@@ -5,8 +5,9 @@ A RecyclerView that implements header and footer features，and you can use it l
 
 使用方法示例如下：
 
-private MyAdapter mAdapter;
 
+
+    private MyAdapter mAdapter;
     private XCRecyclerView mRecyclerView;
     private List<String> mData;
     private View mHeaderView;
