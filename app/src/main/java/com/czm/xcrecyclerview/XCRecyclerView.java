@@ -185,6 +185,16 @@ public class XCRecyclerView extends RecyclerView{
             }
         }
 
+        @Override
+        public void onViewDetachedFromWindow(ViewHolder holder) {
+            if(holder.getItemViewType() == TYPE_HEADER){
+                super.onViewDetachedFromWindow(holder);
+            }else if(holder.getItemViewType() == TYPE_FOOTER){
+                super.onViewDetachedFromWindow(holder);
+            }else{
+                this.mAdapter.onViewDetachedFromWindow(holder);
+            }
+        }
         private class CustomViewHolder extends ViewHolder{
 
             public CustomViewHolder(View itemView) {
