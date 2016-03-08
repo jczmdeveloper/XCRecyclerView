@@ -158,7 +158,7 @@ public class XCRecyclerView extends RecyclerView{
             int rePosition = position - getHeaderCount();
             int itemCount = this.mAdapter.getItemCount();
             if(rePosition < itemCount){
-                return this.mAdapter.getItemViewType(position);
+                return this.mAdapter.getItemViewType(position-getHeaderCount());
             }
             return TYPE_LIST_ITEM;
         }
